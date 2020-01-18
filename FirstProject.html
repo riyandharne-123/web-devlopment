@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<title>
+Web Devlopment
+</title>
+<script type="text/javascript">
+ function displayImage(elem) {
+    var image = document.getElementById("img1");
+	
+    image.src=elem.value;       
+  }
+  function ChangeImage()
+  {
+   var image = document.getElementById("img1");
+	
+    image.src='blank.jpg';       
+  }
+</script>
+</head>
+<body>
+<select id='selectbox' onchange='displayImage(this)'>
+<option value="blank.jpg">Default</option>
+<option value="HTML.png">HTML</option>
+<option value="CSS.png">CSS</option>
+<option value="JS.jpg">JAVASCRIPT</option>
+</select>
+<br>
+<br>
+<br>
+<br>
+
+<button onclick='ChangeImage()' id='btn1'>Default Image</button>
+<br>
+<br>
+<img id="img1" src='blank.jpg' style="width:200px height:200px;">
+</body>
+</html>
